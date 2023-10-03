@@ -1,0 +1,159 @@
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(255, 187, 92);
+    text-align: center;
+    padding: 20px;
+    width: 800px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+header nav ul li{
+    list-style-type: none;
+}
+
+main{
+    background-color: rgb(255, 155, 80);
+    padding: 20px;
+    width: 800px;
+}
+header nav ul li a{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: rgb(198, 61, 47);
+    /* display: flex; */
+    text-align: center;
+    width: 840px;
+}
+.LogoEremitas{
+    padding: 20px;
+    width: 180px;
+    height: 180px;   
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul li{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Index main */
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+.ImagenMusicos{
+    width: 250px;
+    height: 250px;
+}
+
+/* main tienda */
+section{
+    background-color: rgb(236, 100, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.producto{
+    width: 100px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+.texto-producto{
+    padding: 10px;
+    border: 1px solid black;
+
+}
+.gorranegra{
+    width: 100px;
+    height: 100px;
+}
+.gorranegra{
+    width: 100%;
+}
+
+/* main gira */
+.titulo-gira{
+    text-align: center;
+}
+.subtitulos{
+    justify-content: center;
+    display: flex;
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(3, 150px);
+}
+.rectangle{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 50px;
+}
+
+/* Vista movil */
+@media (min-width: 320px) and (max-width: 480px){
+    .subtitulos{
+    justify-content: left;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(3, 80px);}
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .tienda-main-section{
+        display: inline;
+        justify-content: left;
+        align-items: left;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+header{
+    
+    text-align: center;
+    padding: 20px;
+    width: 480px;}
+footer{
+
+        text-align: center;
+        width: 500px;
+    }    
+}
+/* main videos */
+.videos{
+    display: flex;
+    justify-content: center;
+}
+.col-2{
+    justify-content: left;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}
